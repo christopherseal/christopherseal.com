@@ -11,7 +11,7 @@
   publish = "build/"
 
   # Default build command.
-  command = "echo 'default context'"
+  command = "npm run build"
 
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
