@@ -41,7 +41,7 @@ function App() {
     <Router> 
       <Switch>
         <Route exact path="/">
-        <Home title="Hello World"/>
+        <Home title="Christopher Seal "/>
       </Route>
     </Switch> 
     </Router>

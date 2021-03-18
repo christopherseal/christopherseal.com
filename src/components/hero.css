@@ -6,13 +6,37 @@
     grid-row-gap: 0px;
     }
 
+.hero .text {
+    grid-area: text;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .hero .text div {
+
+} */
+
+.hero .imageContainer {
+    grid-area: image;
+    text-align: center;
+}
+
 .hero img {
     max-width: 500px;
     border-radius: 50%;
     height: 300px;
     width: 300px;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.hero--imgAlignLeft {
+    grid-template-areas:
+    "image text";
+}
+
+.hero--imgAlignRight {
+    grid-template-areas:
+    "text image";
 }

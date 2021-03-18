@@ -1,13 +1,17 @@
 import React from "react";
-import './hero.css';
+import "./Hero.css";
 
-export function Hero({ title, text, imgUrl }) {
+export function Hero({ title, text, imgUrl, imgAlignment }) {
   return (
-    <article className='hero'>
-      <img src={imgUrl} />
-      <div>
-        <h2>{title}</h2>
-        <p>{text}</p>
+    <article className={`${imgAlignment} hero`}>
+      <div className="imageContainer">
+        <img src={imgUrl} />
+      </div>
+      <div className="text">
+        <div>
+          <h2>{title}</h2>
+          <p>{text}</p>
+        </div>
       </div>
     </article>
   );
