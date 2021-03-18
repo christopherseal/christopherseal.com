@@ -1,5 +1,5 @@
 import React from "react";
-import "./Hero.css";
+import "./hero.css";
 
 export function Hero({ title, text, imgUrl, imgAlignment }) {
   return (

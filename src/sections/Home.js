@@ -12,7 +12,7 @@ export function Home({ title }) {
         title="Welcome"
         text="I have an approximate knowledge of many things"
         imgUrl={img.default}
-        imgAlignment="Hero--imgAlignLeft"
+        imgAlignment="hero--imgAlignLeft"
       />
       </LayoutSection>
     </>
