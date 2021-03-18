@@ -14,10 +14,6 @@
     justify-content: center;
 }
 
-/* .hero .text div {
-
-} */
-
 .hero .imageContainer {
     grid-area: image;
     text-align: center;
