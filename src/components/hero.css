@@ -1,4 +1,4 @@
-.hero {
+.Hero {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -6,7 +6,7 @@
     grid-row-gap: 0px;
     }
 
-.hero .text {
+.Hero .text {
     grid-area: text;
     text-align: center;
     display: flex;
@@ -14,12 +14,16 @@
     justify-content: center;
 }
 
-.hero .imageContainer {
+/* .hero .text div {
+
+} */
+
+.Hero .imageContainer {
     grid-area: image;
     text-align: center;
 }
 
-.hero img {
+.Hero img {
     max-width: 500px;
     border-radius: 50%;
     height: 300px;
@@ -27,12 +31,12 @@
     overflow: hidden;
 }
 
-.hero--imgAlignLeft {
+.Hero--imgAlignLeft {
     grid-template-areas:
     "image text";
 }
 
-.hero--imgAlignRight {
+.Hero--imgAlignRight {
     grid-template-areas:
     "text image";
 }
