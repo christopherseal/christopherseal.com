@@ -29,6 +29,7 @@
     height: 300px;
     width: 300px;
     overflow: hidden;
+    border: 1px solid #021a40;
 }
 
 .hero--imgAlignLeft {

@@ -10,7 +10,7 @@ export function Home({ title }) {
       <h1> {title} </h1>
       <Hero
         title="Welcome"
-        text="I have an approximate knowledge of many things"
+        text="I have an approximate knowledge of many things. I'm currently a developer at Shopify and I'm still building this site.."
         imgUrl={img.default}
         imgAlignment="hero--imgAlignLeft"
       />

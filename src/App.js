@@ -35,9 +35,9 @@ function App() {
   }
 
   return ( <ThemeContext.Provider value={theme}>
-    <button onClick={toggleTheme}>
+    {/* <button onClick={toggleTheme}>
       Theme
-    </button>
+    </button> */}
     <Router> 
       <Switch>
         <Route exact path="/">
