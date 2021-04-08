@@ -16,7 +16,7 @@ export function Home() {
         <div>
         <h2>Christopher Seal</h2>
         <SocialIcons></SocialIcons>
-        <p>I have an approximate knowledge of many things. I'm currently a software developer at Shopify.</p>
+        <p>I have an approximate knowledge of many things. Currently a software developer at Shopify.</p>
         </div>
       </Hero>
       </LayoutSection>
