@@ -1,14 +1,19 @@
 {
   "data": [
     {
+        "url": "https://www.linkedin.com/in/%F0%9F%92%BB-christopher-seal-7b577613/",
+        "imgUrl": "linkedin",
+        "description": "linkedin"
+    },
+    {
       "url": "https://github.com/christopherseal",
       "imgUrl": "github",
       "description": "github"
     },
     {
-        "url": "https://twitter.com",
-        "imgUrl": "github",
-        "description": "github"
-      }
+        "url": "https://instagram.com/christopherseal",
+        "imgUrl": "instagram",
+        "description": "instagram"
+    }
   ]
 }
