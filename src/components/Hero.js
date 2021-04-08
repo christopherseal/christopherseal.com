@@ -1,17 +1,15 @@
 import React from "react";
 import "./hero.css";
+import { LayoutSection } from "./LayoutSection";
 
-export function Hero({ title, text, imgUrl, imgAlignment }) {
+export function Hero({ children, imgUrl, imgAlignment }) {
   return (
     <article className={`${imgAlignment} hero`}>
       <div className="imageContainer">
-        <img src={imgUrl} />
+        <img className="imgMain" src={imgUrl} />
       </div>
       <div className="text">
-        <div>
-          <h2>{title}</h2>
-          <p>{text}</p>
-        </div>
+        {children}
       </div>
     </article>
   );

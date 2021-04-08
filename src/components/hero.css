@@ -23,7 +23,7 @@
     text-align: center;
 }
 
-.hero img {
+.hero .imgMain {
     max-width: 500px;
     border-radius: 50%;
     height: 300px;
@@ -31,6 +31,7 @@
     overflow: hidden;
     border: 1px solid #021a40;
 }
+
 
 .hero--imgAlignLeft {
     grid-template-areas:

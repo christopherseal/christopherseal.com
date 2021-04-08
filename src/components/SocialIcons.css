@@ -1,0 +1,13 @@
+.SocialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.SocialIcons a {
+    max-width: 50px;
+    padding: 10px;
+}
+
+.SocialIcons img {
+    max-width: 100%;
+}
