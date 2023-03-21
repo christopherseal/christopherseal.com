@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 500px;
 }
 
 .App-logo {
@@ -15,7 +18,8 @@
 
 body {
   font-family: 'Cutive Mono', monospace;
-  background: whitesmoke;
+  background: var(--background);
+  padding: 0;
 }
 
 .App-header {
@@ -25,12 +29,27 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.toggleButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.toggleButton button {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #f0ed48;
+  padding: 0;
+  margin: 0;
 }
 
 @keyframes App-logo-spin {
@@ -45,5 +64,8 @@ body {
 @media screen and (max-width: 530px) {
   body {
     padding: 0 30px;
+  }
+  .App-header {
+    flex-direction: column;
   }
 }
