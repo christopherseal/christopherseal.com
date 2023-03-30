@@ -3,15 +3,13 @@ import "./SocialIcons.css";
 import SocialLinks from "./SocialLinks.json";
 
 export function SocialIcons() {
-  console.log({ SocialLinks });
   return (
     <div className="SocialIcons">
       {SocialLinks.data.map((item) => {
-        const img = require(`../images/${item.imgUrl}.png`).default;
-        console.log(img)
+        const img = require(`../images/${item.imgUrl}.png`);
         return (
           <a href={item.url}>
-            <img src={img} />
+            <img src={img} alt={item.description}/>
           </a>
         );
       })}

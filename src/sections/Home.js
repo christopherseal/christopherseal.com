@@ -10,7 +10,7 @@ export function Home() {
     <LayoutSection>
       {/* <h1> {title} </h1> */}
       <Hero
-        imgUrl={img.default}
+        imgUrl={img}
         imgAlignment="hero--imgAlignLeft"
       >
         <div>
