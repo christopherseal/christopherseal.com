@@ -4,7 +4,6 @@ import './App.css';
 import { Home } from './sections/Home';
 import { Contact } from './sections/Contact';
 import { Navbar } from './components/Navbar';
-import { Footer } from './components/Footer';
 
 export const ThemeContext = React.createContext();
 
@@ -44,7 +43,6 @@ function App() {
               </Route>
             </Switch>
           </main>
-          <Footer />
         </div>
       </Router>
     </ThemeContext.Provider>

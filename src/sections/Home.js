@@ -1,6 +1,7 @@
 // src/sections/Home.js
 import React, { useState, useEffect, useRef } from 'react';
 import profilePic from '../images/main_image.jpg';
+import { SocialIcons } from '../components/SocialIcons';
 import './Home.css';
 import {
   FaLaptop,
@@ -105,6 +106,10 @@ export function Home({ title }) {
                   <span>AWS</span>
                 </div>
               </div>
+            </div>
+            <div className="blurb-footer">
+              <SocialIcons />
+              <p className="copyright">© {new Date().getFullYear()} Christopher Seal</p>
             </div>
           </div>
         </div>
