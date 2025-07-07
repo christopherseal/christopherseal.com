@@ -1,0 +1,94 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--background);
+  color: var(--text-color);
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 50px;
+  max-height: 64px;
+  box-sizing: border-box;
+}
+
+/* Logo */
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-links li a:hover {
+  color: #007BFF;
+}
+
+/* Theme Toggle Button */
+.theme-toggle button {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Animated Icon */
+.theme-icon {
+  display: inline-block;
+  animation: rotateIn 0.4s ease;
+}
+
+/* Icon Animation */
+@keyframes rotateIn {
+  from {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* Optional Hover Pop */
+.theme-toggle button:hover .theme-icon {
+  transform: scale(1.2);
+  transition: transform 0.2s;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 1rem;
+  }
+}

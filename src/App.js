@@ -1,47 +1,54 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
-import {Home} from './sections/Home';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import { Home } from './sections/Home';
+import { Contact } from './sections/Contact';
+import { Navbar } from './components/Navbar';
+import { Footer } from './components/Footer';
 
-const ThemeContext = React.createContext('light');
+export const ThemeContext = React.createContext();
+
 function App() {
-
   const [theme, setTheme] = useState("light");
-let currentTheme = theme;
 
-useEffect(() => {
-  let root = document.documentElement;
-  root.style.setProperty('--text-color', theme === "dark" ? "#fff" : "#000");
-  root.style.setProperty('--background', theme === "dark" ? "#000" : "#fff");
-}, [theme]);
+  useEffect(() => {
+    const root = document.documentElement;
 
-const toggleTheme=()=>{
-  setTheme(theme === "dark" ? "light" : "dark");
-  currentTheme = currentTheme === "dark"?
-  "light":
-  "dark"
-}
+    if (theme === "dark") {
+      root.style.setProperty('--text-color', '#fff');
+      root.style.setProperty('--background', '#000');
+      root.style.setProperty('--tile-gradient', 'linear-gradient(135deg, #2c3e50, #4ca1af)');
+    } else {
+      root.style.setProperty('--text-color', '#000');
+      root.style.setProperty('--background', 'linear-gradient(180deg, #ffffff 0%, #f4f4f4 100%)');
+      root.style.setProperty('--tile-gradient', 'linear-gradient(135deg, #e0f7fa, #fbe9e7)');
+    }
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prev => (prev === "dark" ? "light" : "dark"));
+  };
 
   return (
     <ThemeContext.Provider value={theme}>
-      <div className="toggleButton">
-        <button onClick={toggleTheme}>
-          <span className="circle" />
-        </button>
-      </div>
       <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home title="Christopher Seal "/>
-          </Route>
-        </Switch>
+        <div className="app-wrapper">
+          <Navbar toggleTheme={toggleTheme} />
+          <main>
+            <Switch>
+              <Route exact path="/">
+                <Home title="Hi There!" />
+              </Route>
+              <Route path="/contact">
+                <Contact />
+              </Route>
+            </Switch>
+          </main>
+          <Footer />
+        </div>
       </Router>
     </ThemeContext.Provider>
   );
-  }
+}
 
 export default App;

@@ -1,13 +1,16 @@
-.SocialIcons {
-    display: flex;
-    justify-content: center;
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
-.SocialIcons a {
-    max-width: 50px;
-    padding: 10px;
+.social-icons a {
+  color: var(--text-color);
+  transition: transform 0.2s ease;
 }
 
-.SocialIcons img {
-    max-width: 100%;
+.social-icons a:hover {
+  transform: scale(1.2);
 }
