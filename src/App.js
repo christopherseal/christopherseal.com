@@ -37,7 +37,7 @@ function App() {
           <main>
             <Switch>
               <Route exact path="/">
-                <Home title="Hi There!" />
+                <Home title="Hi! I'm Christopher" />
               </Route>
               <Route path="/contact">
                 <Contact />

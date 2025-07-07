@@ -6,6 +6,57 @@
   flex: 1;
 }
 
+.experience-tile h2 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.experience-tile h3 {
+  margin: 0.25rem 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.experience-date {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #888;
+  margin-bottom: 0.75rem;
+}
+
+.experience-description {
+  text-align: left;
+  padding-left: 1.2rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  color: var(--text-color);
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.experience-description li {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 0.6s ease forwards;
+  animation-delay: calc(var(--i) * 0.15s);
+  list-style-type: disc;
+  margin-bottom: 0.75rem;
+  animation-fill-mode: both;
+}
+
 .homepage {
   display: flex;
   flex-wrap: wrap;
@@ -165,7 +216,6 @@
   margin-bottom: 0.5rem;
 }
 
-/* New: Carousel Pagination */
 .experience-pagination-wrapper {
   display: flex;
   justify-content: center;

@@ -1,12 +1,11 @@
 /* Navbar Container */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 1rem 2rem;
   background-color: var(--background);
   color: var(--text-color);
-  border-bottom: 1px solid #ddd;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -14,6 +13,7 @@
   max-height: 64px;
   box-sizing: border-box;
 }
+
 
 /* Logo */
 .nav-logo {
