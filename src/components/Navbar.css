@@ -79,16 +79,32 @@
   transition: transform 0.2s;
 }
 
-/* Responsive Layout */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    padding: 0.75rem 1rem;
   }
 
   .nav-links {
     flex-direction: column;
-    gap: 0.5rem;
-    padding-top: 1rem;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding-top: 0.75rem;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  .nav-logo {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    align-self: flex-start;
+  }
+
+  .theme-toggle button {
+    font-size: 1.1rem;
   }
 }

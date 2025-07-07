@@ -2,11 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh;
-  padding: 0 2rem;
+  padding: 2rem;
   background-color: var(--background);
   color: var(--text-color);
   position: relative;
+  flex: 1;
+  min-height: 80vh;
+  flex-direction: column;
 }
 
 .experience-tile {
@@ -19,6 +21,9 @@
   text-align: center;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .experience-tile:hover {
@@ -30,14 +35,12 @@
   margin: 0.5rem 0 0.25rem;
   font-size: 1.6rem;
   font-weight: 600;
-  color: var(--text-color);
 }
 
 .experience-tile h3 {
   margin: 0.25rem 0;
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--text-color);
 }
 
 .experience-date {
@@ -53,7 +56,6 @@
   font-size: 0.95rem;
   line-height: 1.6;
   opacity: 0.9;
-  color: var(--text-color);
 }
 
 .experience-description li {
@@ -69,7 +71,6 @@
 .experience-tile .icon {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  color: var(--text-color);
 }
 
 .experience-pagination {
@@ -108,22 +109,31 @@
   background: #333;
 }
 
+/* 📱 Mobile Adjustments */
 @media (max-width: 768px) {
   .experience-container {
-    flex-direction: column;
     padding: 1rem;
-    gap: 1rem;
   }
 
-  .nav-button {
-    position: static;
-    transform: none;
-    margin: 1rem;
-    font-size: 2rem;
+  .experience-tile {
+    padding: 1.5rem;
   }
 
-  .nav-button.left,
-  .nav-button.right {
-    order: 1;
+  .experience-description {
+    font-size: 0.9rem;
+    padding-left: 1rem;
+  }
+
+  .experience-tile h2 {
+    font-size: 1.4rem;
+  }
+
+  .experience-tile h3 {
+    font-size: 1.1rem;
+  }
+
+  .arrow-button {
+    font-size: 1rem;
+    padding: 0.25rem;
   }
 }

@@ -57,13 +57,16 @@
   transition: background-color 0.2s ease;
 }
 
+.contact-tile button:hover {
+  background-color: #0056b3;
+}
+
 .form-icon {
   color: var(--text-color);
   margin-right: 0.75rem;
   font-size: 1.2rem;
   vertical-align: middle;
 }
-
 
 .contact-success {
   background: var(--tile-gradient);
@@ -88,11 +91,22 @@
   }
 }
 
+/* 📱 Mobile Adjustments */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    padding: 1rem;
+  }
 
-.contact-tile button:hover {
-  background-color: #0056b3;
-}
+  .contact-tile {
+    padding: 1.5rem;
+  }
 
-.thank-you {
-  text-align: center;
+  .input-icon input,
+  .input-icon textarea {
+    font-size: 0.95rem;
+  }
+
+  .contact-tile button {
+    font-size: 1rem;
+  }
 }
